@@ -3,6 +3,7 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
 Disallow: /js/
+Disallow: 404.html
 
 Disallow: /characters/img/
 Disallow: /work/*/
