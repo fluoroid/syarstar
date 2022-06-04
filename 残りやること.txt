@@ -1,0 +1,16 @@
+1.トップうちのこ絵、ogp image 2:1の比率
+
+2.リトルサーバーでお試し(リトルプラン)、公開と確認
+
+3. htaccessリダイレクトチェック。だめなら、https://lsv.jp/faq_domain.php?=05#faq
+ディレクトリ丸見えじゃないか(Optionは制限されているらしい)？
+SSL化されているか確認(Let's Encrypt)
+OGPのprefixチェック
+
+4.リトルサーバー契約(リトルプラン)
+初期税込1012円、年額税込1980円(月額税込165円)
+近くのUFJから楽天へ銀行振込
+
+5. SEO対策
+SEO対策→Google Search Console, google アナリティクス
+構造化マークアップ

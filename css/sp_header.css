@@ -1,0 +1,60 @@
+/* ヘッダー */
+header{
+	margin:-20px 0 0px;
+	padding:30px 0px 10px;
+	top: 0;  
+	left: 0;  
+	width: 100%;
+	height: 70px;  
+	background-color: transparent;  
+	color: #000;
+	border-bottom:none;
+	overflow: visible;
+	z-index: 900;
+	position:absolute;
+	display:block;
+}
+nav{
+	position:relative;
+	top:30px;
+}
+#logo{
+	position:absolute;
+	display:block;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 20px 0 0;
+	margin:0px auto 0;
+}
+img.logo{
+	width: 220px;
+	z-index: 6;
+}
+.dropmenu{
+	display:none;
+}
+/* progress */
+.progress {
+	background: none;
+	color: #594843;
+	height: 0%;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 101;
+}
+.progress_bar {
+	border-top: 3px solid #0067EC;
+	position: absolute;
+	top: 0%;
+	width: 0%;
+	z-index: 102;
+}
+.progress_text {
+	z-index: 102;
+	font-size: 1em;
+	float: left;
+}
+.progress_complete .progress_bar {
+	border-top-color: #00AFEC;
+}

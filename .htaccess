@@ -1,0 +1,16 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 404 Not Found (お探しのページは冬眠中のようです……)
+
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^.*/index\.html$
+RewriteRule ^(.*)index.html$ https://syarstar.net/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.syarstar\.net$ [NC,OR]
+RewriteCond %{HTTPS} off
+RewriteRule .* https://syarstar.net%{REQUEST_URI} [R=301,L]
+
+DirectoryIndex index.html       
+order deny,allow

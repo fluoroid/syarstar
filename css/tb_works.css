@@ -1,0 +1,61 @@
+/* 画像ギャラリー */
+#lightgallery{
+	background:none;
+	margin:0;
+	padding:1vw 0;
+	text-align:left;
+	width:100%;
+}
+#lightgallery li{
+	background:none;
+	display:inline-block;
+	margin:0.75vw 0.5vw;
+	padding:0;
+	width:23%;
+}
+#lightgallery li figure{
+	cursor: pointer;
+	width:100%;
+	position: relative;
+	overflow: hidden;
+	margin:0;
+	padding:0;
+	border-radius: 10%;
+	-webkit-border-radius: 10%;
+	-moz-border-radius: 10%;
+}
+#lightgallery li img{
+	width:100%;
+	height:auto;
+	vertical-align: bottom;
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	opacity: 1;
+}
+figcaption p.figimg{
+	padding:0;
+	margin: auto 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+figcaption p.figimg span{
+	font-size: 6vw;
+	background: none;
+	padding:0;
+	margin:0px 0;
+	color:#ffffff;
+}
+p.desc {
+	color: #ccc;
+	margin:0;
+	padding:0;
+}

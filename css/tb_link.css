@@ -1,0 +1,79 @@
+/* 画像ギャラリー */
+#lightgallery{
+	background:none;
+	margin:0;
+	padding:1vw 0;
+	text-align:left;
+	width:100%;
+}
+#lightgallery li{
+	background:none;
+	display:inline-block;
+	margin:0.75vw 0.5vw 20vw;
+	padding:0;
+	width:20%;
+}
+#lightgallery li figure{
+	cursor: pointer;
+	width:100%;
+	position: relative;
+	overflow: visible;
+	margin:0;
+	padding:0;
+}
+#lightgallery li img{
+	width:100%;
+	height:auto;
+	vertical-align: bottom;
+}
+span.linkhover {
+	z-index: 2;
+	position: absolute;
+	display: inline;
+	top: 115%;
+	left: 0%;
+	opacity: 1;
+	width: 100%;
+	height: 50%;
+	background: rgba(0,0,0,0.6);
+	-webkit-transition: 0.75s;
+	transition: 0.75s;
+	border-top-left-radius: 10% 20%;
+	border-top-right-radius: 10% 20%;
+	border-bottom-right-radius: 10% 20%;
+	border-bottom-left-radius: 10% 20%;
+}
+span.linkhover:after{
+	border-bottom: 12px solid rgba(0,0,0,0.6);
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	top: -12px;
+	left : 42.5%;
+	content: "";
+	position: absolute;
+}
+span.linkhover p.figimg{
+	font-size:2.25vw;
+	line-height: 1.5em;
+	padding:0;
+	margin: auto 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+span.linkhover:hover{
+	cursor: auto;
+}
+span.linkhover p.figimg span{
+	font-size: 1em;
+	background: none;
+	padding:0;
+	margin:0px 0;
+	color:#ffffff;
+}
+p.desc {
+	color: #ccc;
+	margin:0;
+	padding:0;
+}
