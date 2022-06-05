@@ -6,6 +6,7 @@ Disallow: /js/
 Disallow: 404.html
 
 Disallow: /characters/img/
-Disallow: /work/*/
+Disallow: /works/*/
+Allow: /works/index.html
 
 Sitemap:https://syarstar.net/sitemap.xml
