@@ -45,6 +45,7 @@ $(document).on('click', '.sort-btn li', function(){
 		$("#lightgallery li."+className[0]).removeClass("I_inactive");
 		$("#lightgallery li."+className[0]).addClass("I_active");
 	}
-	// 絞り込み後に画像のフェード
+	// 絞り込み後に画像のフェード&表示画像更新
 	fadeAnime();
+	lgstart.refresh();
 });
