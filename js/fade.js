@@ -24,3 +24,27 @@ $(function() {
 		}
 	}
 });
+// 絞り込み機能
+$(document).ready(function($) {// 読込み時
+	$("#lightgallery li").addClass("I_active");
+});
+$(document).on('click', '.sort-btn li', function(){
+	// ボタンのクラス名
+	$(".sort-btn .R_active").removeClass("R_active");
+	$(this).addClass('R_active');
+	// 各画像のクラス名
+	var className = $(this).attr("class");
+	className = className.split(' ');
+	$("#lightgallery li").removeClass("I_active");
+	$("#lightgallery li").removeClass("I_inactive");
+	$("#lightgallery li").removeClass("fade");
+	if(className[0] == "category0"){
+		$("#lightgallery li").addClass("I_active");
+	}else{
+		$("#lightgallery li").addClass("I_inactive");
+		$("#lightgallery li."+className[0]).removeClass("I_inactive");
+		$("#lightgallery li."+className[0]).addClass("I_active");
+	}
+	// 絞り込み後に画像のフェード
+	fadeAnime();
+});

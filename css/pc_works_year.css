@@ -80,3 +80,65 @@ p.desc {
 	margin:0;
 	padding:0;
 }
+/* 絞り込み */
+.sort-btn {
+	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
+	padding:0px 0px;
+}
+.sort-btn li {
+	border-radius:10px;
+	cursor: pointer;
+	padding: 10px;
+	margin:0 10px;
+	list-style: none;
+	font-size: 24px;
+	font-weight: 500;
+}
+.sort-btn li.category0 {
+	background: #C7B9B5;
+}
+.sort-btn li.category0:hover {
+	background: #8F7C77;
+}
+.sort-btn li.category0.R_active {
+	background:#594843 !important;  
+	color: #ffffff !important;
+}
+.sort-btn li.category1 {
+	background: #A4C8F8;
+}
+.sort-btn li.category1:hover {
+	background: #4F96F2;
+}
+.sort-btn li.category1.R_active {
+	background:#0067EC !important;
+	color: #ffffff !important;
+}
+.sort-btn li.category2 {
+	background: #96E3E0;
+}
+.sort-btn li.category2:hover {
+	background: #41C8C4;
+}
+.sort-btn li.category2.R_active {
+	background:#00ADA9 !important;
+	color: #ffffff !important;
+}
+.sort-btn li.category3 {
+	background: #F6C0D9;
+}
+.sort-btn li.category3:hover {
+	background: #EF87B7;
+}
+.sort-btn li.category3.R_active {
+	background:#E85298 !important;
+	color: #ffffff !important;
+}
+#lightgallery li.I_inactive{
+	display: none;
+}
+#lightgallery li.I_active{
+	display: inline-block;
+}
