@@ -25,7 +25,7 @@ $(function() {
 	}
 });
 // 絞り込み機能
-$(document).ready(function($) {// 読込み時
+$(function() {
 	$("#lightgallery li").addClass("I_active");
 });
 $(document).on('click', '.sort-btn li', function(){
