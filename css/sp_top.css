@@ -1,6 +1,6 @@
 /* うちの子 */
 img.uchinoko{
-	max-height: 75vh;
+	max-height: 80vh;
 	max-width: 100%;
 }
 #uchinokop{
@@ -13,7 +13,7 @@ img.uchinoko{
 /* あいつ */
 img.aitsu{
 	max-width: 100%;
-	max-height: 15vh;
+	max-height: 10vh;
 }
 #aitsup{
 	position:fixed;
