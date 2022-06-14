@@ -20,6 +20,7 @@
         this._defaults = defaults;
         this._name = pluginName;
         this.init();
+        this.t_resize();
     }
 
     Plugin.prototype = {
@@ -119,8 +120,16 @@
             
         },
 		
-        yourOtherFunction: function(el, options) {
-            // some logic
+        // resize
+        t_resize: function() {
+            $(window).on('load resize', function() {
+                var firstdiv = $('#tabs_container');
+                var mythis = $('.tabulous_active');
+                var thislink = mythis.attr('href');
+                var thisform = mythis.parent().parent().parent();
+                var thisdivwidth = thisform.find('div'+thislink).height();console.log(thisdivwidth);
+                firstdiv.addClass('transition').css('height',thisdivwidth+'px');          
+            });
         }
     };
 
