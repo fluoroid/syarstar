@@ -9,4 +9,6 @@ Disallow: /characters/img/
 Disallow: /works/*/
 Allow: /works/index.html
 
+Allow: /img/ogp_image.jpg
+
 Sitemap:https://syarstar.net/sitemap.xml
