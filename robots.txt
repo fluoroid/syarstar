@@ -8,9 +8,5 @@ Disallow: /404.html
 Disallow: /characters/img/
 Disallow: /works/*/
 Allow: /works/index.html
-Allow: /img/ogp_image.jpg
-
-User-agent: Twitterbot
-Allow: /img/
 
 Sitemap:https://syarstar.net/sitemap.xml
