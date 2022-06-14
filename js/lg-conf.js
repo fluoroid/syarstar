@@ -3,7 +3,7 @@ const lgstart = lightGallery(showimg, {
 	plugins: [lgZoom],
 	loop: false,
 	mousewheel: true,
-	preload: 1,
+	preload: 0,
 	speed: 500,
 	startAnimationDuration: 500,
 	showBarsAfter: 0,
