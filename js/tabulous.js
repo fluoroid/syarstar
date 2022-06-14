@@ -127,7 +127,7 @@
                 var mythis = $('.tabulous_active');
                 var thislink = mythis.attr('href');
                 var thisform = mythis.parent().parent().parent();
-                var thisdivwidth = thisform.find('div'+thislink).height();console.log(thisdivwidth);
+                var thisdivwidth = thisform.find('div'+thislink).height();
                 firstdiv.addClass('transition').css('height',thisdivwidth+'px');          
             });
         }
