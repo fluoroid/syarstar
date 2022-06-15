@@ -1,6 +1,13 @@
 function fadeAnime(){
 	$('.FTrigger').each(function(){
-		var elemPos = $(this).offset().top+100;//要素より100px下
+		var usedevice = 0;
+		if (window.matchMedia('(min-width: 600px)').matches){
+			usedevice++;
+		}
+		if (window.matchMedia('(min-width: 1025px)').matches){
+			usedevice++;
+		}
+		var elemPos = $(this).offset().top + 33 * (usedevice + 1);
 		var scroll = $(window).scrollTop();
 		var windowHeight = $(window).height();
 		if (scroll >= elemPos - windowHeight){
