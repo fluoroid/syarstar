@@ -1,0 +1,163 @@
+/* 【共通】 */
+/* ポップアップ */
+#uchinokop, #aitsup {
+	opacity: 0;
+}
+#uchinokop{
+	position:fixed;
+	right:0;
+	margin: 0;
+}
+#aitsup{
+	position:fixed;
+	bottom:47px;
+	margin: 0;
+	z-index: -100;
+}
+#aitsup{
+	position:fixed;
+	bottom:47px;
+	left:5%;
+	margin: 0 0 0px;
+	z-index: -100;
+}
+.zoomIn{
+	animation-name:zoomInAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+@keyframes zoomInAnime{
+	from {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+/* ブラー */
+#Btext1, #Btext2 {
+	opacity: 0;
+}
+.blur{
+	animation-name:blurAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+@keyframes blurAnime{
+	from {
+	  filter: blur(10px);
+	  transform: scale(1.02);
+	  opacity: 0;
+	}
+	to {
+	  filter: blur(0);
+	  transform: scale(1);
+	  opacity: 1;
+	}
+}
+/* 光彩 */
+h1{
+	text-shadow:0 0 10px #FFF,0 0 10px #FFF,0 0 10px #FFF;
+}
+h2{
+	text-shadow:0 0 10px #FFF,0 0 10px #FFF,0 0 10px #FFF;
+}
+
+/* 【PC (ウインドウサイズ)】 */
+@media screen and (min-width:1025px) {
+}
+
+/* 【タブレット (ウインドウサイズ)】 */
+@media screen and (min-width:600px) and (max-width:1024px) {
+}
+
+/* 【スマホ (ウインドウサイズ)】 */
+@media screen and (max-width:599px) {
+}
+
+/* 【PC (デバイスサイズ)】 */
+@media screen and (min-device-width:1025px) {
+	/* うちの子 */
+	img.uchinoko{
+		max-height: 85vh;
+		max-width: 100%;
+	}
+	#uchinokop{
+		bottom:-50px;
+		z-index: -1;
+	}
+	/* あいつ */
+	img.aitsu{
+		max-width: 100%;
+		max-height: 15vh;
+	}
+	#aitsup{
+		position:fixed;
+		bottom:47px;
+		left:70px;
+		margin: 0 0 0px;
+		z-index: -1;
+	}
+	/* 光彩 */
+	h1{
+		font-size: min(7vw, 64px) !important;
+	}
+}
+
+/* 【タブレット (デバイスサイズ)】 */
+@media screen and (min-device-width:600px) and (max-device-width:1024px) {
+	/* うちの子 */
+	img.uchinoko{
+		max-height: 80vh;
+		max-width: 100%;
+	}
+	#uchinokop{
+		bottom:0px;
+		z-index: -100;
+	}
+	/* あいつ */
+	img.aitsu{
+		max-width: 100%;
+		max-height: 12.5vh;
+	}
+	#aitsup{
+		left:5%;
+		z-index: -100;
+	}
+	/* 光彩 */
+	h1{
+		font-size: min(7.5vw, 48px) !important;
+	}
+}
+
+/* 【スマホ (デバイスサイズ)】 */
+@media screen and (max-device-width:599px) {
+	/* うちの子 */
+	img.uchinoko{
+		max-height: 80vh;
+		max-width: 100%;
+	}
+	#uchinokop{
+		position:fixed;
+		bottom:0px;
+		right:0;
+		margin: 0 0 0px;
+		z-index: -100;
+	}
+	/* あいつ */
+	img.aitsu{
+		max-width: 100%;
+		max-height: 10vh;
+	}
+	#aitsup{
+		left:5%;
+	}
+	/* 光彩 */
+	h1{
+		font-size: min(8.4vw, 30px) !important;
+	}
+}
