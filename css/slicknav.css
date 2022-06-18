@@ -16,7 +16,7 @@
 }
 
 /* 【タブレット・スマホ (デバイスサイズ)】 */
-@media screen and (max-device-width:1024px) {
+@media screen and (max-device-width:1024px), screen and (min-device-width:1025px) and (max-width:599px) {
 	.slicknav_btn {
 		position: relative;
 		display: block;
@@ -47,9 +47,8 @@
 		transform: translateY(-5.5px) rotate(45deg);
 		width: 100%;
 	}
-	
 	.slicknav_menu {
-		/* *zoom: 1; */
+		display: block;
 		position:fixed;
 		top:0;
 		width: 100%;
@@ -189,10 +188,11 @@
 		color: #594843;
 	}
 	.slicknav_nav a {
-		padding: 5px 10px;
-		margin: 2px 5px;
+		padding: 5px 7.5px;
+		margin: 2px 4px;
 		text-decoration: none;
 		color: #594843;
+		width: 100%;
 	}
 	.slicknav_nav a:hover {
 		-webkit-border-radius: 6px;

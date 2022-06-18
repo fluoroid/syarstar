@@ -37,6 +37,7 @@ img.logo{
 }
 .progress_complete .progress_bar {
 	border-bottom-color: #00AFEC;
+	border-top-color: #00AFEC;
 }
 
 /* 【PC (ウインドウサイズ)】 */
@@ -57,7 +58,6 @@ img.logo{
 		color: #000;
 		border-bottom:1px #594843 solid;
 		z-index: 5;
-		position:relative;
 		overflow: visible;
 	}
 	#logo{
@@ -70,7 +70,6 @@ img.logo{
 	}
 	/* dropmenu */
 	.dropmenu{
-		/* *zoom: 1; */
 		list-style-type: none;
 		width: 60%;
 		margin:0 auto 0;
@@ -109,7 +108,7 @@ img.logo{
 		display: block;
 		margin: -40px 0 0;
 		padding: 58px 0 16px;
-		background: #ffffff;
+		background: none;
 		color: #594843;
 		font-size: 100%;
 		line-height: 1;
@@ -166,7 +165,6 @@ img.logo{
 	#dropmenu li:hover ul li{
 		overflow: visible;
 		height: 46px;
-	
 	}
 	/* progress */
 	.progress {
@@ -174,6 +172,7 @@ img.logo{
 	}
 	.progress_bar {
 		border-bottom: 3px solid #0067EC;
+		border-top:none;
 	}
 	.progress_text {
 		float: right;
@@ -181,7 +180,7 @@ img.logo{
 }
 
 /* 【タブレット・スマホ (デバイスサイズ)】 */
-@media screen and (max-device-width:1024px) {
+@media screen and (max-device-width:1024px), screen and (min-device-width:1025px) and (max-width:599px) {
 	header{
 		margin:-20px 0 0px;
 		padding:30px 0px 10px;
@@ -190,7 +189,7 @@ img.logo{
 		border-bottom:none;
 		overflow: visible;
 		z-index: 900;
-		position:absolute;
+		position:absolute !important;
 		display:block;
 	}
 	#logo{
@@ -212,6 +211,7 @@ img.logo{
 	}
 	.progress_bar {
 		border-top: 3px solid #0067EC;
+		border-bottom:none;
 	}
 	.progress_text {
 		float: left;

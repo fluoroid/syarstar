@@ -135,7 +135,7 @@ h2{
 }
 
 /* 【スマホ (デバイスサイズ)】 */
-@media screen and (max-device-width:599px) {
+@media screen and (max-device-width:599px), screen and (min-device-width:1025px) and (max-width:599px) {
 	/* うちの子 */
 	img.uchinoko{
 		max-height: 80vh;
@@ -158,6 +158,6 @@ h2{
 	}
 	/* 光彩 */
 	h1{
-		font-size: min(8.4vw, 30px) !important;
+		font-size: min(8.2vw, 30px) !important;
 	}
 }
