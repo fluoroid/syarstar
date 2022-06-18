@@ -21,7 +21,8 @@
 }
 
 .lg-container {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'M PLUS Rounded 1c',"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;;
+  /* font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
 }
 
 .lg-next,
@@ -254,7 +255,7 @@
 
 .lg-sub-html h4 {
   margin: 0;
-  font-size: 13px;
+  /* font-size: 13px; */
   font-weight: bold;
 }
 
@@ -264,11 +265,11 @@
 }
 
 .lg-sub-html a {
-  color: inherit;
+  /* color: inherit; */
 }
 
 .lg-sub-html a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .lg-media-overlap .lg-sub-html {
