@@ -98,9 +98,6 @@ a:hover, a:active{
 
 /* 【PC (ウインドウサイズ)】 */
 @media screen and (min-width:1025px) {
-	html{
-		overflow-x:hidden;
-	}
 	#main{
 		margin:90px auto 80px;
 		padding:0;
@@ -129,9 +126,6 @@ a:hover, a:active{
 
 /* 【タブレット (ウインドウサイズ)】 */
 @media screen and (min-width:600px) and (max-width:1024px) {
-	html{
-		overflow-x:hidden;
-	}
 	#main{
 		margin:55px auto 80px;
 		padding:60px 0 0;
@@ -196,6 +190,11 @@ a:hover, a:active{
 }
 
 /* 【タブレット (デバイスサイズ)】 */
+@media screen and (min-device-width:600px){
+	html{
+		overflow-x:hidden;
+	}
+}
 /* 窓サイズがPCのとき */
 @media screen and (min-device-width:600px) and (max-device-width:1024px) and (min-width:1025px) {
 	#main{
