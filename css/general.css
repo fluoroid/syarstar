@@ -137,7 +137,7 @@ a:hover, a:active{
 		padding:60px 0 0;
 	}
 	h1{
-		margin: 0px 0 0;
+		margin: 0;
 		padding: 95px 30px 30px;
 		font-size: 48px;
 		line-height: 48px;
@@ -168,7 +168,7 @@ a:hover, a:active{
 		padding:60px 0 0;
 	}
 	h1{
-		margin: 0px 0 0;
+		margin: 0;
 		padding: 80px 10px 15px;
 		font-size: 2em;
 		line-height: 2em;
@@ -202,7 +202,7 @@ a:hover, a:active{
 /* 窓サイズがPCのとき */
 @media screen and (min-device-width:600px) and (max-device-width:1024px) and (min-width:1025px) {
 	h1{
-		padding: 95px 30px 30px;
+		padding: 111px 30px 30px;
 	}
 }
 
