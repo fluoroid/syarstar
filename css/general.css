@@ -201,8 +201,9 @@ a:hover, a:active{
 /* 【タブレット (デバイスサイズ)】 */
 /* 窓サイズがPCのとき */
 @media screen and (min-device-width:600px) and (max-device-width:1024px) and (min-width:1025px) {
-	h1{
-		padding: 111px 30px 30px;
+	#main{
+		margin: 55px auto 80px;
+		padding:60px 0 0;
 	}
 }
 
