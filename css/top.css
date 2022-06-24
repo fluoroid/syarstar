@@ -163,4 +163,11 @@ h2{
 	#aitsup{
 		left: 5%;
 	}
+	/* 表題 */
+	h1{
+		font-size: min(8vw, 30px) !important;
+	}
+	h2 {
+		font-size: 1em;
+	}
 }

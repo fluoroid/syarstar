@@ -160,9 +160,6 @@ a:hover, a:active{
 
 /* 【スマホ (ウインドウサイズ)】 */
 @media screen and (max-width:599px) {
-	html{
-		overflow-x:auto;
-	}
 	#main{
 		margin:55px auto 80px;
 		padding:60px 0 0;
@@ -208,8 +205,10 @@ a:hover, a:active{
 }
 
 /* 【スマホ (デバイスサイズ)】 */
-/* 窓サイズがタブレットのとき */
-@media screen and (max-device-width:599px) and (min-width:600px) and (max-width:1024px) {
+@media screen and (max-device-width:599px) {
+	html{
+		overflow-x:auto;
+	}
 	h1{
 		margin: 0;
 		padding: 80px 10px 15px;
@@ -223,7 +222,7 @@ a:hover, a:active{
 		line-height: 1.5em;
 	}
 	ul.policy li{
-		font-size: 1em;
+		font-size: 1em !important;
 		line-height: 1.5em;
 	}
 	p.caption{
