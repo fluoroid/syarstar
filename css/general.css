@@ -98,18 +98,6 @@ a:hover, a:active{
 
 /* 【PC (ウインドウサイズ)】 */
 @media screen and (min-width:1025px) {
-}
-
-/* 【タブレット (ウインドウサイズ)】 */
-@media screen and (min-width:600px) and (max-width:1024px) {
-}
-
-/* 【スマホ (ウインドウサイズ)】 */
-@media screen and (max-width:599px) {
-}
-
-/* 【PC (デバイスサイズ)】 */
-@media screen and (min-device-width:1025px) {
 	html{
 		overflow-x:hidden;
 	}
@@ -139,8 +127,8 @@ a:hover, a:active{
 	}
 }
 
-/* 【タブレット (デバイスサイズ)】 */
-@media screen and (min-device-width:600px) and (max-device-width:1024px) {
+/* 【タブレット (ウインドウサイズ)】 */
+@media screen and (min-width:600px) and (max-width:1024px) {
 	html{
 		overflow-x:hidden;
 	}
@@ -170,8 +158,8 @@ a:hover, a:active{
 	}
 }
 
-/* 【スマホ (デバイスサイズ)】 */
-@media screen and (max-device-width:599px), screen and (min-device-width:1025px) and (max-width:599px) {
+/* 【スマホ (ウインドウサイズ)】 */
+@media screen and (max-width:599px) {
 	html{
 		overflow-x:auto;
 	}
@@ -201,8 +189,19 @@ a:hover, a:active{
 		line-height: 1.25em;
 	}
 }
-@media screen and (min-device-width:1025px) and (max-width:599px) {
-	html{
-		overflow-x:hidden;
+
+/* 【PC (デバイスサイズ)】 */
+/* 窓サイズがタブレットのとき */
+@media screen and (min-device-width:1025px) and (min-width:600px) and (max-width:1024px) {
+	h1{
+		padding: 50px 30px 30px;
 	}
+}
+
+/* 【タブレット (デバイスサイズ)】 */
+@media screen and (min-device-width:600px) and (max-device-width:1024px) {
+}
+
+/* 【スマホ (デバイスサイズ)】 */
+@media screen and (max-device-width:599px), screen and (min-device-width:1025px) and (max-width:599px) {
 }
