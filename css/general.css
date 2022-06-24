@@ -208,5 +208,27 @@ a:hover, a:active{
 }
 
 /* 【スマホ (デバイスサイズ)】 */
-@media screen and (max-device-width:599px), screen and (min-device-width:1025px) and (max-width:599px) {
+/* 窓サイズがタブレットのとき */
+@media screen and (max-device-width:599px) and (min-width:600px) and (max-width:1024px) {
+	h1{
+		margin: 0;
+		padding: 80px 10px 15px;
+		font-size: 2em;
+		line-height: 2em;
+	}
+	h2{
+		margin: 10px 0 0;
+		padding: 0 0 0 20px;
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+	ul.policy li{
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+	p.caption{
+		margin-top: 0;
+		font-size: 1em;
+		line-height: 1.25em;
+	}
 }
