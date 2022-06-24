@@ -199,7 +199,11 @@ a:hover, a:active{
 }
 
 /* 【タブレット (デバイスサイズ)】 */
-@media screen and (min-device-width:600px) and (max-device-width:1024px) {
+/* 窓サイズがPCのとき */
+@media screen and (min-device-width:600px) and (max-device-width:1024px) and (min-width:1025px) {
+	h1{
+		padding: 95px 30px 30px;
+	}
 }
 
 /* 【スマホ (デバイスサイズ)】 */
