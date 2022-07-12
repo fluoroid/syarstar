@@ -2,22 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://syarstar.net/</loc>
-		<lastmod>2022-06-16T00:00:00+09:00</lastmod>
+		<xhtml:link rel=”alternate” hreflang=”ja” href=”https://syarstar.net/”>
+		<xhtml:link rel=”alternate” hreflang=”en” href=”https://en.syarstar.net/”>
+		<lastmod>2022-07-13T00:00:00+09:00</lastmod>
 	</url>
 	<url>
 		<loc>https://syarstar.net/about/</loc>
-		<lastmod>2022-06-16T00:00:00+09:00</lastmod>
+		<xhtml:link rel=”alternate” hreflang=”ja” href=”https://syarstar.net/about/”>
+		<xhtml:link rel=”alternate” hreflang=”en” href=”https://en.syarstar.net/about/”>
+		<lastmod>2022-07-13T00:00:00+09:00</lastmod>
 	</url>
 	<url>
 		<loc>https://syarstar.net/characters/</loc>
-		<lastmod>2022-06-16T00:00:00+09:00</lastmod>
+		<xhtml:link rel=”alternate” hreflang=”ja” href=”https://syarstar.net/characters/”>
+		<xhtml:link rel=”alternate” hreflang=”en” href=”https://en.syarstar.net/characters/”>
+		<lastmod>2022-07-13T00:00:00+09:00</lastmod>
 	</url>
 	<url>
 		<loc>https://syarstar.net/works/</loc>
-		<lastmod>2022-06-16T00:00:00+09:00</lastmod>
+		<xhtml:link rel=”alternate” hreflang=”ja” href=”https://syarstar.net/works/”>
+		<xhtml:link rel=”alternate” hreflang=”en” href=”https://en.syarstar.net/works/”>
+		<lastmod>2022-07-13T00:00:00+09:00</lastmod>
 	</url>
 	<url>
 		<loc>https://syarstar.net/link/</loc>
-		<lastmod>2022-06-16T00:00:00+09:00</lastmod>
+		<xhtml:link rel=”alternate” hreflang=”ja” href=”https://syarstar.net/link/”>
+		<xhtml:link rel=”alternate” hreflang=”en” href=”https://en.syarstar.net/link/”>
+		<lastmod>2022-07-13T00:00:00+09:00</lastmod>
 	</url>
 </urlset>
