@@ -17,29 +17,57 @@ footer p{
 	position: absolute;
 	margin: 0;
 	top: 50%;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
 	width: 100%;
 }
-
-/* 【PC (ウインドウサイズ)】 */
-@media screen and (min-width:1025px) {
+footer div#legal {
+	clear:both;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+}
+#legal a {
+	font-family:'M PLUS Rounded 1c',"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+}
+#legal a, #legal a:visited {
+	color: #ffffff;
+	background: rgba(64, 96, 240, 0.5);
+	padding: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	font-weight: 500;
+}
+#legal a:hover, #legal a:active{
+	background:rgba(64, 96, 240, 1);
 }
 
-/* 【タブレット・スマホ (ウインドウサイズ)】 */
-@media screen and (max-width:1024px) {
+/* 【PC ・タブレット(ウインドウサイズ)】 */
+@media screen and (min-width:600px) {
+	footer p {
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+}
+
+/* 【スマホ (ウインドウサイズ)】 */
+@media screen and (max-width:599px) {
+	footer p {
+		left: 45%;
+		transform: translateY(-50%) translateX(-50%);
+	}
 }
 
 /* 【PC (デバイスサイズ)】 */
 @media screen and (min-device-width:1025px) {
-	footer p{
+	footer p, #legal a{
 		font-size: min(3vw, 1em);
 	}
 }
 
 /* 【タブレット・スマホ (デバイスサイズ)】 */
 @media screen and (max-device-width:1024px), screen and (min-device-width:1025px) and (max-width:599px) {
-	footer p{
+	footer p, #legal a{
 		font-size: min(4vw, 0.85em);
 	}
 }

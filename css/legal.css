@@ -1,0 +1,35 @@
+/* 【PC (ウインドウサイズ)】 */
+@media screen and (min-width:1025px) {
+	h1.legal{
+		font-size: min(6.5vw, 64px) !important;
+	}
+	p.legal {
+		padding: 0 0 0 40px;
+		font-size: 20px;
+		line-height: 25px;
+	}
+}
+
+/* 【タブレット (ウインドウサイズ)】 */
+@media screen and (min-width:600px) and (max-width:1024px) {
+	h1.legal{
+		font-size: min(7vw, 48px) !important;
+	}
+	p.legal {
+		padding: 0 0 0 40px;
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+/* 【スマホ (ウインドウサイズ)】 */
+@media screen and (max-width:599px) {
+	h1.legal{
+		font-size: min(8vw, 30px) !important;
+	}
+	p.legal {
+		padding: 0 0 0 20px;
+		font-size: 1em;
+		line-height: 1.25em;
+	}
+}
