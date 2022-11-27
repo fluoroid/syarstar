@@ -71,3 +71,10 @@ footer div#legal {
 		font-size: min(4vw, 0.85em);
 	}
 }
+
+/* 【タブレット(デバイスサイズ)以下】 */
+@media screen and (max-device-width:1024px) {
+	#legal a, #legal a:visited{
+		background: rgba(64, 96, 240, 1);
+	}
+}
