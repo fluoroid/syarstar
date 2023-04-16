@@ -29,8 +29,12 @@ h2{
 ul.policy li{
 	margin-bottom: 1em;
 }
-p.caption{
+p.caption {
 	font-weight: 500;
+}
+p.caption2 {
+	font-weight: 400;
+	padding: 0 0 0 1.75em;
 }
 /* リンク色 */
 a, a:visited{
@@ -138,7 +142,7 @@ a:hover, a:active{
 		font-size: 24px;
 		line-height: 30px;
 	}
-	p.caption{
+	p.caption, p.caption2{
 		font-size: 24px;
 		line-height: 24px;
 	}
@@ -170,7 +174,7 @@ a:hover, a:active{
 		font-size: 20px;
 		line-height: 25px;
 	}
-	p.caption{
+	p.caption, p.caption2{
 		font-size: 20px;
 		line-height: 20px;
 	}
@@ -202,7 +206,7 @@ a:hover, a:active{
 		font-size: 1em;
 		line-height: 1.5em;
 	}
-	p.caption{
+	p.caption, p.caption2{
 		margin-top: 0;
 		font-size: 1em;
 		line-height: 1.25em;
@@ -270,7 +274,7 @@ a:hover, a:active{
 		font-size: 16px !important;
 		line-height: 1.5em;
 	}
-	p.caption{
+	p.caption, p.caption2{
 		margin-top: 0;
 		font-size: 1em;
 		line-height: 1.25em;

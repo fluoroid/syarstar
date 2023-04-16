@@ -2,7 +2,7 @@
 #lightgallery{
 	background:none;
 	margin:0;
-	padding:1vw 0;
+	padding:20px 0;
 	text-align:left;
 	width:100%;
 }
@@ -80,12 +80,13 @@ p.desc {
 	/* 画像ギャラリー */
 	#lightgallery li{
 		width:12.5%;
+		max-width: 150px;
 	}
 	span.linkhover p.figimg{
-		font-size:1.25vw;
+		font-size: min(1.25vw, 18px);
 	}
 	span.linkhover p.figimg span{
-		font-size: 1.25vw;
+		font-size: min(1.25vw, 18px);
 	}
 }
 
@@ -107,7 +108,7 @@ p.desc {
 @media screen and (max-width:599px) {
 	/* 画像ギャラリー */
 	#lightgallery li{
-		width:30%;
+		width:29%;
 	}
 	span.linkhover p.figimg{
 		font-size:3.5vw;
@@ -123,7 +124,7 @@ p.desc {
 		margin:0 0 0 30px;
 	}
 	#lightgallery li{
-		margin:0.75vw 2vw;
+		margin:min(0.75vw, 10px) 0.9vw;
 	}
 	figure:hover span.linkhover {
 		top: 115%;

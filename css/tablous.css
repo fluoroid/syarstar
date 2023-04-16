@@ -132,7 +132,7 @@
 		text-align: center;
 	}
 	#tabs li {
-		font-size:2vw;
+		font-size:min(2vw,30px);
 		display:block;
 		width: 100%;
 	}
