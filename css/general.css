@@ -36,6 +36,9 @@ p.caption2 {
 	font-weight: 400;
 	padding: 0 0 0 1.75em;
 }
+ruby > rt {
+    font-size: 40%;
+}
 /* リンク色 */
 a, a:visited{
 	color:#0067EC;
@@ -227,7 +230,7 @@ a:hover, a:active{
 /* 窓サイズがタブレットのとき */
 @media screen and (min-device-width:1025px) and (min-width:600px) and (max-width:1024px) {
 	h1{
-		padding: 50px 30px 30px;
+		padding: 40px 30px 30px;
 	}
 }
 
