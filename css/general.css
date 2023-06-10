@@ -274,9 +274,12 @@ a:hover, a:active{
 }
 /* 窓サイズがPCのとき */
 @media screen and (min-device-width:600px) and (max-device-width:1024px) and (min-width:1025px) {
+	#kami_wrapper{
+		padding: 90px 0 80px;
+	}
 	#main{
-		margin: 55px auto 80px;
-		padding:60px 0 0;
+		margin:0px auto 0px;
+		padding:0;
 	}
 }
 
@@ -294,7 +297,7 @@ a:hover, a:active{
 @media screen and (max-device-width:599px) and (min-width:600px) and (max-width:1024px) {
 	h1{
 		margin: 0;
-		padding: 80px 10px 15px;
+		padding: 15px 10px 15px;
 		font-size: 2em;
 		line-height: 2em;
 	}
