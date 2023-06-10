@@ -1,0 +1,91 @@
+#terms{
+	background:none;
+	margin:0;
+	padding:20px 0;
+	text-align:left;
+}
+#terms li{
+	background:none;
+	display:inline-block;
+	margin:0.75vw 0.5vw 0.75vw;
+	padding:0;
+}
+#terms li figure{
+	width:100%;
+	position: relative;
+	overflow: visible;
+	margin:0;
+	padding:0;
+}
+#terms li img{
+	width:100%;
+	height:auto;
+	vertical-align: bottom;
+}
+.terms_text {
+	text-align: center;
+}
+
+/* 【PC (ウインドウサイズ)】 */
+@media screen and (min-width:1025px) {
+	/* 画像ギャラリー */
+	#terms{
+		margin:0 0 0 30px;
+	}
+	#terms li{
+		width:20%;
+		max-width: 150px;
+	}
+	.terms_text {
+		font-size: 24px;
+		line-height: 24px;
+	}
+}
+
+/* 【タブレット (ウインドウサイズ)】 */
+@media screen and (min-width:600px) and (max-width:1024px) {
+	/* 画像ギャラリー */
+	#terms{
+		margin:0 0 0 20px;
+	}
+	#terms li{
+		width:22.5%;
+	}
+	.terms_text {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+}
+
+/* 【スマホ (ウインドウサイズ)】 */
+@media screen and (max-width:599px) {
+	/* 画像ギャラリー */
+	#terms{
+		margin:0 0 0 10px;
+	}
+	#terms li{
+		width:25%;
+		min-width: 75px;
+	}
+	.terms_text {
+		margin-top: 0;
+		font-size: 1em;
+		line-height: 1.25em;
+	}
+}
+
+/* 【PC (デバイスサイズ)】 */
+@media screen and (min-device-width:1025px) {
+	#terms li{
+		margin:min(0.75vw, 10px) 0.9vw;
+	}
+}
+
+/* 【タブレット (デバイスサイズ)】 */
+@media screen and (min-device-width:600px) and (max-device-width:1024px) {
+}
+
+/* 【スマホ (デバイスサイズ)】 */
+@media screen and (max-device-width:599px) {
+}

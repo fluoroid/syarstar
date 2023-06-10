@@ -1,19 +1,38 @@
 .FTrigger{
 	opacity: 0;
 }
+.FTrigger_f{
+	opacity: 0;
+}
 .fade{
 	animation-name:flipLeftTopAnime;
-	animation-duration:0.9s;
+	animation-duration:0.7s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+.fade_sec {
+	animation-name:zoomInAnime;
+	animation-duration:1s;
 	animation-fill-mode:forwards;
 	opacity:0;
 }
 @keyframes flipLeftTopAnime{
 	from {
-		transform: translate(-20px,40px) rotate(-10deg);
+		transform: scale(0.33) rotateZ(-60deg);
 		opacity: 0;
 	}
 	to {
-		transform: translate(0,0) rotate(0deg);
+		transform: scale(1) rotateZ(0);
+		opacity: 1;
+	}
+}
+@keyframes zoomInAnime{
+	from {
+		transform: scale(0.9);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
 		opacity: 1;
 	}
 }

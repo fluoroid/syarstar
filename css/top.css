@@ -72,7 +72,7 @@ h2{
 @media screen and (min-width:1025px) {
 	/* 表題 */
 	h1{
-		font-size: min(6.5vw, 64px) !important;
+		font-size: min(6vw, 48px) !important;
 	}
 }
 
@@ -80,7 +80,7 @@ h2{
 @media screen and (min-width:600px) and (max-width:1024px) {
 	/* 表題 */
 	h1{
-		font-size: min(7vw, 48px) !important;
+		font-size: min(6.6vw, 36px) !important;
 	}
 }
 
@@ -88,7 +88,7 @@ h2{
 @media screen and (max-width:599px) {
 	/* 表題 */
 	h1{
-		font-size: min(8vw, 30px) !important;
+		font-size: min(7vw, 30px) !important;
 	}
 	h2 {
 		font-size: 1em;

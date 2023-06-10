@@ -63,8 +63,10 @@
 	<script type="text/javascript" media="only screen and (max-device-width:1024px)">
 		$(function(){
 			$('#dropmenu').slicknav();
+			$('.slicknav_menu').prepend('<a id="toplogo" href="../"><img src="../img/logo.png" alt="TOP" class="logo"></a>');
 		});
 	</script>
+	<script src="../js/fade_sec.js"></script>
 
  
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
@@ -72,7 +74,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/slicknav.css">
-	<link rel="stylesheet" type="text/css" href="../css/legal.css">
+	<link rel="stylesheet" type="text/css" href="../css/fade.css">
 
 	
 	<script type="application/ld+json">
@@ -106,12 +108,11 @@
 			</div>
 			<nav>
 				<ul id="dropmenu" class="dropmenu">
-					<li class="for_sp"><a href="../">トップページ</a></li>
 					<li><a href="../about/">眠星観測所</a></li>
 					<li><a href="../characters/">うちの子</a></li>
 					<li><a href="../works/">作品</a>
 						<ul>
-							<li class="for_sp"><a href="../works/">作品</a></li>
+							<li class="for_sp"><a href="../works/">作品トップ</a></li>
 							<li><a href="../works/2023/">2023</a></li>
 							<li><a href="../works/2022/">2022</a></li>
 							<li><a href="../works/2021/">2021</a></li>
@@ -124,38 +125,44 @@
 			</nav>
 		</header>
 		<section id="main">
-			<h1 class="legal">プライバシーポリシー</h1>
-			<h2>アクセス解析ツールについて</h2>
-			<p class="legal">
-				当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。 このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。 トラフィックデータは匿名で収集されており、個人を特定するものではありません。
-			</p>
-			<p class="legal">
-				この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。 この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener noreferrer">Googleアナリティクスサービス利用規約</a>と<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Googleポリシーと規約</a>をご覧ください。
-			</p>
-			<h2>プライバシーポリシーの変更について</h2>
-			<p class="legal">
-				当サイトは、個人情報に関して日本の法令を遵守するとともに、本プライバシーポリシーの内容を適宜見直しその改善に努めます。
-			</p>
-			<p class="legal">
-				本プライバシーポリシーは事前の予告なく変更することがございます。本プライバシーポリシーが変更された場合も含め、最新のプライバシーポリシーを常に本ページにて開示いたします。
-			</p>
-			<h1 class="legal">免責事項</h1>
-			<p class="legal">
-				当サイトのコンテンツや情報については可能な限り正確な情報を掲載するよう努めておりますが、正確性や安全性を保証するものではございません。当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
-			</p>
-			<p class="legal">
-				当サイトからリンクやバナーなどによって他のサイトに移動した場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
-			</p>
-			<h1 class="legal">著作権について</h1>
-			<p class="legal">
-				当サイトで掲載しているコンテンツ(文章、画像、イラスト等)は著作権法よって権利が守られており、許可なく無断利用(転載、複製、改変、二次利用等)することは禁止されています。
-			</p>
-			<p class="legal">
-				ただし、イラストに関しては<a href="../works/">作品</a>のページにて別途利用規約を定めさせていただきますのでご確認ください。
-			</p>
-			<p class="legal">
-				二次創作関連の各権利所有者におかれましては、万一掲載内容に問題がございましたらご本人様より<a href="https://twitter.com/Fluoroid_AA" target="_blank" rel="noopener noreferrer">@Fluoroid_AA</a>へお問い合わせください。迅速に対応いたします。
-			</p>
+			<div class="inner_content FTrigger">
+				<h1>プライバシーポリシー</h1>
+				<h2>アクセス解析ツールについて</h2>
+				<p class="caption2">
+					当サイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を利用しています。 このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。 トラフィックデータは匿名で収集されており、個人を特定するものではありません。
+				</p>
+				<p class="caption2">
+					この機能はCookieを無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。 この規約に関しての詳細は<a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener noreferrer">Googleアナリティクスサービス利用規約</a>と<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Googleポリシーと規約</a>をご覧ください。
+				</p>
+				<h2>プライバシーポリシーの変更について</h2>
+				<p class="caption2">
+					当サイトは、個人情報に関して日本の法令を遵守するとともに、本プライバシーポリシーの内容を適宜見直しその改善に努めます。
+				</p>
+				<p class="caption2">
+					本プライバシーポリシーは事前の予告なく変更することがございます。本プライバシーポリシーが変更された場合も含め、最新のプライバシーポリシーを常に本ページにて開示いたします。
+				</p>
+			</div>
+			<div class="inner_content FTrigger">
+				<h1>免責事項</h1>
+				<p class="caption2">
+					当サイトのコンテンツや情報については可能な限り正確な情報を掲載するよう努めておりますが、正確性や安全性を保証するものではございません。当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
+				</p>
+				<p class="caption2">
+					当サイトからリンクやバナーなどによって他のサイトに移動した場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
+				</p>
+			</div>
+			<div class="inner_content FTrigger">
+				<h1>著作権について</h1>
+				<p class="caption2">
+					当サイトで掲載しているコンテンツ(文章、画像、イラスト等)は著作権法よって権利が守られており、許可なく無断利用(転載、複製、改変、二次利用等)することは禁止されています。
+				</p>
+				<p class="caption2">
+					ただし、イラストに関しては<a href="../works/">作品</a>のページにて別途利用規約を定めさせていただきますのでご確認ください。
+				</p>
+				<p class="caption2">
+					二次創作関連の各権利所有者におかれましては、万一掲載内容に問題がございましたらご本人様より<a href="https://twitter.com/Fluoroid_AA" target="_blank" rel="noopener noreferrer">@Fluoroid_AA</a>へお問い合わせください。迅速に対応いたします。
+				</p>
+			</div>
 			<h2>(2022年11月28日 改訂)</h2>
 		</section>
 	</div>

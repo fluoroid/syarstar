@@ -12,6 +12,35 @@ nav{
 	position:absolute;
 	display:block;
 }
+#logo a{
+	overflow: hidden;
+}
+#logo a:before{
+	position: absolute;
+	content:"";
+	width: 75%;
+	height: 100%;
+	top: 0;
+	left: -100%;
+	z-index: 5;
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 100%);
+	transform: skewX(-25deg);
+}
+#logo a:hover::before {
+	animation: shine 0.8s;
+}
+#logo a img {
+	transform: scale(1);
+	transition: 0.3s ease-in-out;
+}
+#logo a:hover img {
+	transform:rotate(1.25deg) scale(1.075);
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
 img.logo{
 	z-index: 6;
 }

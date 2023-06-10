@@ -18,6 +18,11 @@ body{
 	width:90%;
 	display: none;
 }
+.inner_content {
+	background-color: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    border: 2px solid #333333;
+}
 h1{
 	color:#594843;
 	font-weight:800;
@@ -34,7 +39,6 @@ p.caption {
 }
 p.caption2 {
 	font-weight: 400;
-	padding: 0 0 0 1.75em;
 }
 ruby > rt {
     font-size: 40%;
@@ -132,6 +136,10 @@ a:hover, a:active{
 		margin:0px auto 0px;
 		padding:0;
 	}
+	.inner_content {
+		padding: 1em 2em 2em;
+		margin: 30px 0px;
+		}
 	h1{
 		margin: 15px 0 0;
 		padding: 30px 30px 30px;
@@ -152,6 +160,9 @@ a:hover, a:active{
 		font-size: 24px;
 		line-height: 24px;
 	}
+	p.caption2 {
+		padding: 0 0 0 1.75em;
+	}
 	#change_language{
 		font-size: 1.5em;
 		bottom: 72px;
@@ -164,6 +175,10 @@ a:hover, a:active{
 		margin:55px auto 80px;
 		padding:40px 0 0;
 	}
+	.inner_content {
+		padding: 1em 2em 2em;
+		margin: 30px 0px;
+		}
 	h1{
 		margin: 0;
 		padding: 30px 30px 30px;
@@ -184,6 +199,9 @@ a:hover, a:active{
 		font-size: 20px;
 		line-height: 20px;
 	}
+	p.caption2 {
+		padding: 0 0 0 1.5em;
+	}
 	#change_language{
 		font-size: 1.25em;
 		bottom: 70px;
@@ -196,10 +214,14 @@ a:hover, a:active{
 		margin:55px auto 80px;
 		padding:40px 0 0;
 	}
+	.inner_content {
+		padding: 0.5em 0.5em 1em;
+		margin: 20px 0px;
+	}
 	h1{
 		margin: 0;
 		padding: 15px 10px 15px;
-		font-size: 2em;
+		font-size: 1.8em;
 		line-height: 2em;
 	}
 	h2{
@@ -219,6 +241,9 @@ a:hover, a:active{
 		margin-top: 0;
 		font-size: 1em;
 		line-height: 1.25em;
+	}
+	p.caption2 {
+		padding: 0 0 0 1em;
 	}
 	#change_language{
 		bottom: 68px;

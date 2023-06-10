@@ -14,7 +14,7 @@
 	margin: 0.5vw 0 0;
 	padding:0;
 	text-align:center;
-	overflow:hidden;
+	/* overflow:hidden; */
 }
 #tabs li a {
 	display:inline-block;
@@ -53,23 +53,11 @@
 	z-index:0;
 }
 .hideleft {
-	-webkit-transform: translateX(-2%);
-	-moz-transform: translateX(-2%);
-	-o-transform: translateX(-2%);
-	-ms-transform: translateX(-2%);
-	transform: translateX(-2%);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
+	transform: rotateY(-180deg);
 	opacity: 0;
 }
 .showleft {
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-o-transform: translateX(0px);
-	-ms-transform: translateX(0px);
-	transform: translateX(0px);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
+	transform: rotateY(0deg);
 	opacity: 1;
 }
 #tabs {
@@ -100,24 +88,11 @@
 	clear: both;
 }
 .transition {
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	transition: all 0.5s ease-out;
 
-	-webkit-transition-delay: .3s;
-	-moz-transition-delay: .3s;
-	-o-transition-delay: .3s;
-	-ms-transition-delay: .3s;
-	transition-delay: .3s;
 }
 .make_transist {
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+	transition: all 0.5s ease-out;
 }
 
 /* 【PC・タブレット (ウインドウサイズ)】 */
