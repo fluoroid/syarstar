@@ -17,11 +17,14 @@
 
 /* 【タブレット・スマホ (デバイスサイズ)】 */
 @media screen and (max-device-width:1024px), screen and (min-device-width:1025px) and (max-width:599px) {
-	.slicknav_btn {
+	a#toplogo {
 		position: relative;
-		display: block;
-		vertical-align: middle;
-		float: right;
+		display: inline-block;
+	}
+	.slicknav_btn {
+		position: absolute;
+		display: inline-block;
+		right: 0;
 		padding: 0.7em 0.7em 0.7em 0.7em;
 		line-height: 1.125em;
 		cursor: pointer;
