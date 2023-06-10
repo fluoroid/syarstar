@@ -22,7 +22,7 @@
 		display: block;
 		/* vertical-align: middle; */
 		float: right;
-		padding: 0.438em 0.625em 0.438em 0.625em;
+		padding: 0.7em 0.7em 0.7em 0.7em;
 		line-height: 1.125em;
 		cursor: pointer;
 	}
@@ -104,8 +104,9 @@
 	}
 	.slicknav_nav li {
 		display: block;
-		float:left;
-		width: 48%;
+		position: relative;
+		text-align: center; 
+		width: 100%;
 	}
 	.slicknav_nav .slicknav_arrow {
 		font-size: 0.9em;
@@ -137,6 +138,9 @@
 		border-bottom:1px #594843 solid;
 		padding: 5px;
 	}
+	.slicknav_menu ul ul li{
+		font-size: 16px;
+	}
 	.slicknav_menu * {
 		box-sizing: border-box;
 	}
@@ -154,7 +158,7 @@
 		background-color: #fff;
 	}
 	.slicknav_btn {
-		margin: 5px 5px 6px;
+		margin: 15px 5px;
 		text-decoration: none;
 		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 		-webkit-border-radius: 4px;
@@ -164,21 +168,21 @@
 	}
 	.slicknav_nav {
 		color: #594843;
-		margin: 0;
+		margin: 10px 13px 10px 10px;
 		padding: 0;
 		font-size: 1em;
 		list-style: none;
-		overflow: hidden;
+		overflow: visible;
 	}
 	.slicknav_nav ul {
 		list-style: none;
 		overflow: hidden;
 		padding: 0;
-		margin: 0 0 0 20px;
+		margin: 0 0 0 0px;
 	}
 	.slicknav_nav .slicknav_row {
 		padding: 5px 10px;
-		margin: 2px 5px;
+		margin: 2px 0px;
 	}
 	.slicknav_nav .slicknav_row:hover {
 		-webkit-border-radius: 6px;
@@ -188,8 +192,8 @@
 		color: #594843;
 	}
 	.slicknav_nav a {
-		padding: 5px 7.5px;
-		margin: 2px 4px;
+		padding: 7.5px 7.5px;
+		margin: 2px auto;
 		text-decoration: none;
 		color: #594843;
 		width: 100%;
@@ -218,5 +222,9 @@
 		line-height: 30px;
 		padding: 7px 12px;
 		height: 44px; 
+	}
+	#toplogo img {
+		width: 165px;
+		height: 66px;
 	}
 }

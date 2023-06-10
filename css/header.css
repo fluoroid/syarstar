@@ -193,13 +193,7 @@ img.logo{
 		display:block;
 	}
 	#logo{
-		left: 50%;
-		transform: translateX(-50%);
-		padding: 20px 0 0;
-		margin:0px auto 0;
-	}
-	img.logo{
-		width: 220px;
+		display: none;
 	}
 	/* dropmenu */
 	.dropmenu{
