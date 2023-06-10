@@ -122,10 +122,10 @@ p.desc {
 		min-width: 75px;
 	}
 	span.linkhover p.figimg{
-		font-size:3.5vw;
+		font-size:3vw;
 	}
 	span.linkhover p.figimg span{
-		font-size:1em;
+		font-size:3vw;
 	}
 }
 
