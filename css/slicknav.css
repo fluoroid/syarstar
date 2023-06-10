@@ -94,10 +94,10 @@
 	.slicknav_menu:after {
 		content: " ";
 		display: table;
-		clear: none;
+		clear: both;
 	}
 	.slicknav_nav {
-		clear: none;
+		clear: both;
 	}
 	.slicknav_nav ul {
 		display: block;
