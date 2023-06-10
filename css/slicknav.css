@@ -22,8 +22,9 @@
 		display: inline-block;
 	}
 	.slicknav_btn {
-		position: absolute;
-		display: inline-block;
+		position: fixed;
+		display: block;
+		top: 5px;
 		right: 0;
 		padding: 0.7em 0.7em 0.7em 0.7em;
 		line-height: 1.125em;
