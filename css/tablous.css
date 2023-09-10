@@ -21,15 +21,21 @@
 	overflow:hidden;
 	vertical-align: middle;
 	margin:0;
-	padding: 0.5em 0;
+	padding: 0;
 	text-decoration: none;
 	color:#333333;
 	background:rgba(234, 207, 199, 0.5);
 	border: #000000 2px solid;
-	border-radius: 1vw;
-	-webkit-border-radius: 1vw;
-	-moz-border-radius: 1vw;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
 	transition: background 0.3s;
+}
+#tabs li a img{
+	width: 100%;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
 }
 #tabs li a:hover{
 	background:rgba(234, 207, 199, 1);
@@ -51,6 +57,9 @@
 	padding:0;
 	opacity:1;
 	z-index:0;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
 }
 .hideleft {
 	transform: rotateY(-180deg);
@@ -81,7 +90,7 @@
 	color: #ffffff !important;
 }
 .tabulous_active img{
-	margin:-4vw 0 0 0;
+	margin:0;
 }
 .tabulousclear {
 	display: block;
@@ -109,10 +118,10 @@
 	#tabs li {
 		font-size:min(2vw,30px);
 		display:block;
-		width: 100%;
 	}
 	#tabs li a {
-		width: 98%;
+		width: 10vh;
+		height: 10vh;
 		transition: background 0.3s;
 	}
 	#tabs li a:hover{
@@ -138,10 +147,11 @@
 	#tabs li {
 		font-size:4vw;
 		display:inline-block;
-		width: 49%;
+		width: 32%;
 	}
 	#tabs li a {
-		width: 97%;
+		width: 17.5vw;
+		height: 17.5vw;
 	}
 	#tabs_container {
 		width:100%;
