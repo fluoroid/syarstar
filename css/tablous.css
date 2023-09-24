@@ -7,7 +7,7 @@
 	padding:0;
 	z-index:2;
 }
-#tabs-1,#tabs-2 {
+#tabs-1, #tabs-2, #tabs-3, #tabs-4 {
 	top:0 !important;
 }
 #tabs li {
@@ -111,7 +111,7 @@
 		overflow:visible;
 		width: 25%;
 	}
-	#tabs-1,#tabs-2 {
+	#tabs-1,#tabs-2, #tabs-3, #tabs-4 {
 		width: 100%;
 		text-align: center;
 	}
@@ -120,8 +120,8 @@
 		display:block;
 	}
 	#tabs li a {
-		width: 10vh;
-		height: 10vh;
+		width: min(10vh, 10vw);
+		height: min(10vh, 10vw);
 		transition: background 0.3s;
 	}
 	#tabs li a:hover{
@@ -147,7 +147,7 @@
 	#tabs li {
 		font-size:4vw;
 		display:inline-block;
-		width: 32%;
+		width: 23.75%;
 	}
 	#tabs li a {
 		width: 17.5vw;
