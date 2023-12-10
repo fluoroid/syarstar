@@ -1,12 +1,24 @@
 /* 【共通】 */
 /* ポップアップ */
-#uchinokop, #aitsup {
+#uchinokop, #uchinokop2, #aitsup {
 	opacity: 0;
 }
-#uchinokop{
+#uchinokop {
 	position:fixed;
-	right:0;
+	left:5%;
+	top:15%;
 	margin: 0;
+}
+#uchinokop2 {
+	position:fixed;
+	right:-1%;
+	margin: 0;
+}
+#uchinokop img, #uchinokop2 img, #aitsup img {
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+	
 }
 #aitsup{
 	position:fixed;
@@ -23,18 +35,49 @@
 }
 .zoomIn{
 	animation-name:zoomInAnime;
-	animation-duration:1s;
+	animation-duration:0.5s;
 	animation-fill-mode:forwards;
 	opacity: 0;
 }
 @keyframes zoomInAnime{
-	from {
+	0% {
 		transform: scale(0.5);
 		opacity: 0;
 	}
-	to{
+	60% {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+	80% {
+		transform: scale(0.95);
+	}
+	100% {
 		transform: scale(1);
 		opacity: 1;
+	}
+}
+.anime-fuwafuwaX {
+	opacity: 1 !important;
+	animation: fuwafuwaX 7.2s ease-in-out infinite alternate-reverse;
+}
+.anime-fuwafuwaY {
+	opacity: 1 !important;
+	animation: fuwafuwaY 1.8s ease-in-out infinite alternate-reverse;
+}
+@keyframes fuwafuwaX {
+	0%, 100% {
+		transform: translateX(-5%);
+	}
+	50% {
+		transform: translateX(5%);
+	}
+}
+@keyframes fuwafuwaY {
+	0%, 100% {
+		transform: translateX(-10%);
+	}
+	50% {
+		transform: translateX(10%);
 	}
 }
 /* ブラー */
@@ -99,11 +142,19 @@ h2{
 @media screen and (min-device-width:1025px) {
 	/* うちの子 */
 	img.uchinoko{
-		max-height: 85vh;
+		max-height: min(75vh, 85vw);
 		max-width: 100%;
 	}
 	#uchinokop{
 		bottom:-50px;
+		z-index: -1;
+	}
+	img.uchinoko2{
+		max-height: min(75vh, 85vw);
+		max-width: 80%;
+	}
+	#uchinokop2{
+		bottom:50px;
 		z-index: -1;
 	}
 	/* あいつ */
@@ -124,12 +175,22 @@ h2{
 @media screen and (min-device-width:600px) and (max-device-width:1024px) {
 	/* うちの子 */
 	img.uchinoko{
-		max-height: 80vh;
+		max-height: 70vh;
 		max-width: 100%;
 	}
 	#uchinokop{
 		bottom:0px;
+		left:0;
 		z-index: -100;
+	}
+	img.uchinoko2{
+		max-height: 70vh;
+		max-width: 80%;
+	}
+	#uchinokop2{
+		right:-3%;
+		bottom:50px;
+		z-index: -1;
 	}
 	/* あいつ */
 	img.aitsu{
@@ -146,15 +207,25 @@ h2{
 @media screen and (max-device-width:599px), screen and (min-device-width:1025px) and (max-width:599px) {
 	/* うちの子 */
 	img.uchinoko{
-		max-height: 80vh;
+		max-height: 55vh;
 		max-width: 100%;
 	}
 	#uchinokop{
 		position:fixed;
 		bottom:0px;
-		right:0;
+		left:0;
+		top: 25%;
 		margin: 0 0 0px;
 		z-index: -100;
+	}
+	img.uchinoko2{
+		max-height: 55vh;
+		max-width: 80%;
+	}
+	#uchinokop2{
+		right:-8%;
+		bottom:50px;
+		z-index: -1;
 	}
 	/* あいつ */
 	img.aitsu{
