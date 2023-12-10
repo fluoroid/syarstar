@@ -3,12 +3,10 @@ function topshow () {
 	// animation
 	uchinoko.delay(0).queue(function(next) {
 		$(this).addClass('zoomIn');
-		fuwafuwa();
 		next();
 	});
 	uchinoko2.delay(500).queue(function(next) {
 		$(this).addClass('zoomIn');
-		fuwafuwa2();
 		next();
 	});
 	text1.delay(1000).queue(function(next) {
@@ -23,7 +21,12 @@ function topshow () {
 		$(this).addClass('zoomIn');
 		next();
 	});
-	uchinoko.delay(1200).queue(function(next) {
+	uchinoko.delay(2000).queue(function(next) {
+		fuwafuwa();
+		next();
+	});
+	uchinoko2.delay(2000).queue(function(next) {
+		fuwafuwa2();
 		next();
 	});
 }
@@ -49,7 +52,7 @@ function fuwafuwa () {
 			const diff = performance.now() - startTime
 			const x = amplitude.x * Math.sin(speed.x * diff)
 			const y = amplitude.y * Math.sin(speed.y * diff)
-			const rotation = amplitude.rotation * (1 + Math.sin(speed.y * diff))
+			const rotation = amplitude.rotation * Math.sin(speed.y * diff)
 			uchinoko.style.transform = `rotate(${rotation}deg) translate(${x}%, ${y}%)`
 			requestAnimationFrame(tick)
 		}
@@ -69,7 +72,7 @@ function fuwafuwa2 () {
 			const diff = performance.now() - startTime
 			const x = amplitude.x * Math.sin(speed.x * diff)
 			const y = amplitude.y * Math.sin(speed.y * diff)
-			const rotation = amplitude.rotation * (1 + Math.sin(speed.y * diff))
+			const rotation = amplitude.rotation * Math.sin(speed.y * diff)
 			uchinoko2.style.transform = `rotate(${rotation}deg) translate(${x}%, ${y}%)`
 			requestAnimationFrame(tick)
 		}
