@@ -74,6 +74,9 @@ p.desc {
 	margin:0;
 	padding:0;
 }
+figure a[target="_blank"]:after{
+	content: none;
+}
 
 /* 【PC (ウインドウサイズ)】 */
 @media screen and (min-width:1025px) {

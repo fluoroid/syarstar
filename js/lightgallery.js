@@ -1562,7 +1562,7 @@
                 _this.triggerSlideItemLoad(currentSlide, index, delay, speed, isFirstSlide);
             }, function () {
                 currentSlide.addClass('lg-complete lg-complete_');
-                currentSlide.html('<span class="lg-error-msg">Oops... Failed to load content...</span>');
+                currentSlide.html('<span class="lg-error-msg">画像の読み込みに失敗しました</span>');
             });
         };
         LightGallery.prototype.triggerSlideItemLoad = function ($currentSlide, index, delay, speed, isFirstSlide) {

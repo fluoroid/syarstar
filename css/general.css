@@ -52,6 +52,13 @@ a, a:visited{
 a:hover, a:active{
 	color:#00AFEC;
 }
+/* 外部リンク */
+a[target="_blank"]:after{
+	font-family: "Font Awesome 6 Free";
+	content: "\f35d";
+	margin: 0 4px;
+	font-size: 0.9em;
+  }
 /* 選択 */
 ::selection {
     background: #a6b8ff;
@@ -77,7 +84,7 @@ a:hover, a:active{
 	text-decoration: none;
 }
 #page_top a::before{
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome 6 Free';
 	font-weight: 900;
 	content: '\f102';
 	font-size: 25px;

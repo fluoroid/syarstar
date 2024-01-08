@@ -109,6 +109,15 @@ p.desc {
 #lightgallery li.I_active{
 	display: inline-block;
 }
+/* キャプション */
+img.SNS_link {
+	position: relative;
+	top: 5px;
+	width: 28px;
+}
+.lg-sub-html h4 {
+	font-size: 16px;
+}
 
 /* 【PC (ウインドウサイズ)】 */
 @media screen and (min-width:1025px) {
@@ -188,6 +197,15 @@ p.desc {
 		padding: 1.5vw;
 		margin:10px 0px;
 		font-size:4vw;
+	}
+	/* キャプション */
+	img.SNS_link {
+		position: relative;
+		top: 5px;
+		width: 20px;
+	}
+	.lg-sub-html h4 {
+		font-size: 13px;
 	}
 }
 

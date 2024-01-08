@@ -1,18 +1,6 @@
-@font-face {
-  font-family: 'lg';
-  src: url("../fonts/lg.woff2?io9a6k") format("woff2"), url("../fonts/lg.ttf?io9a6k") format("truetype"), url("../fonts/lg.woff?io9a6k") format("woff"), url("../fonts/lg.svg?io9a6k#lg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
 .lg-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'lg' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
+  font-family: 'Font Awesome 6 Free';
   text-transform: none;
   line-height: 1;
   /* Better Font Rendering =========== */
@@ -63,7 +51,8 @@
 }
 
 .lg-next:before {
-  content: '\e095';
+  content: '\f105';
+  font-weight: 900;
 }
 
 .lg-prev {
@@ -71,7 +60,8 @@
 }
 
 .lg-prev:after {
-  content: '\e094';
+  content: '\f104';
+  font-weight: 900;
 }
 
 @-webkit-keyframes lg-right-end {
@@ -226,7 +216,8 @@
 }
 
 .lg-toolbar .lg-close:after {
-  content: '\e070';
+  content: '\f00d';
+  font-weight: 900;
 }
 
 .lg-toolbar .lg-maximize {
@@ -238,7 +229,8 @@
 }
 
 .lg-toolbar .lg-download:after {
-  content: '\e0f2';
+  content: '\f019';
+  font-weight: 900;
 }
 
 .lg-sub-html {
@@ -691,7 +683,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 .lg-icon.lg-zoom-in:after {
-  content: '\e311';
+  content: '\f00e';
+  font-weight: 900;
+  font-size: 0.85em;
 }
 
 .lg-icon.lg-actual-size {
@@ -708,7 +702,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 .lg-icon.lg-zoom-out:after {
-  content: '\e312';
+  content: '\f010';
+  font-weight: 900;
+  font-size: 0.85em;
 }
 
 .lg-zoomed .lg-icon.lg-zoom-out {
