@@ -2,7 +2,7 @@ $(function() {
 	//デフォルト値
 	var dft = {
 		selector: "#misskey_notes",
-		feed: "../php/rss.php",
+		feed: "../api/rss.php",
 		rpp: "10",
 	};
 
