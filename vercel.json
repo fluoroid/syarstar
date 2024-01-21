@@ -3,8 +3,11 @@
 	"cleanUrls": true,
 	"trailingSlash": true,
 	"functions": {
-		"api/rss.php": {
+		"api/*.php": {
 			"runtime": "vercel-php@0.6.0"
 		}
-	}
+	},
+	"routes": [
+		{ "src": "/(.*)",  "dest": "/api/index.php" }
+	]
 }
