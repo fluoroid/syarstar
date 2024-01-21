@@ -3,7 +3,7 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
 Disallow: /js/
-Disallow: /test/
+Disallow: /php/
 Disallow: /404.html
 
 Disallow: /characters/img/
